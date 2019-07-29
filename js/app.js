@@ -6,6 +6,7 @@ window.addEventListener('load', () => {
     let locationTimezone = document.querySelector(".location-timezone");
     let airPressure = document.querySelector(".air-pressure");
     let dailyForecast = document.querySelector(".daily-forecast");
+    let humidityPrecent = document.querySelector(".humidity");
 
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(position => {
@@ -21,13 +22,14 @@ window.addEventListener('load', () => {
                 })
                 .then(data => {
                 console.log(data);
-                const {temperature, summary, pressure} = data.currently;
+                const {temperature, summary, pressure, humidity} = data.currently;
                 // set DOM elements from API data
                 temperatureDegree.textContent = Math.round(((temperature-32)/9)*5);
                 temperatureDescription.textContent = summary.toLowerCase();
                 airPressure.textContent = pressure;
                 locationTimezone.textContent = data.timezone;
                 dailyForecast.textContent = data.hourly.summary.toLowerCase();
+                humidityPrecent.textContent = humidity;
 
                 if(Math.round(((temperature-32)/9)*5) < 18) {
                     document.body.style.background = "rgb(60,100,160)";
