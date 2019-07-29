@@ -53,9 +53,16 @@ body{
     font-weight: bold; 
 }
 
-.footer {
-    height: 5px;
-    margin-top: -5px;
-    padding: 20px;
-    padding-bottom: 50px;
-  }
+.humidity-section{
+    display: flex;
+    align-items: center;
+}
+
+.humidity-section span{
+    margin: 0px;
+    font-size: 30px;
+}
+
+.humidity-section h2{
+    font-size: 50px;
+}
