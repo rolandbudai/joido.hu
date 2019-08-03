@@ -1,68 +1,28 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 
 body{
     height: 100vh;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background: linear-gradient(rgb(100,240,200), rgb(73, 156, 105));
     font-family: sans-serif;
-    color: white;
+    color: beige;
 }
 
-.temperature{
-    flex-direction: column;
-    margin: 0px;
+span{
+    font-weight: bold;
+    font-size: larger;
+    color:tan;
 }
 
-.degree-section{
-    display: flex;
-    align-items: center;
-}
-
-.degree-section span{
-    margin: 0px;
-    font-size: 30px;
-}
-
-.degree-section h2{
-    font-size: 50px;
-}
-
-.pressure{
-    display: flex;
-    align-items: center;
-}
-
-.pressure h3{
-    font-size: 30px;
-}
-
-.pressure span{
-    margin: 5px;
-    font-size: 20px;
-}
-
-.temperature-description{
-    font-weight: bold; 
-}
-
-.humidity-section{
-    display: flex;
-    align-items: center;
-}
-
-.humidity-section span{
-    margin: 0px;
-    font-size: 30px;
-}
-
-.humidity-section h2{
-    font-size: 50px;
+p{
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 15px;
 }
