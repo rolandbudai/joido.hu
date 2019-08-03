@@ -27,16 +27,22 @@ p{
     padding: 15px;
 }
 
-.move{
+.footer{
     animation-name: coloring;
-    animation-duration: 4s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
+    
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1rem;
+    background-color: #e2e1e1;
+    text-align: center;
 }
 
 @keyframes coloring {
-    0%   {color:rgb(245, 234, 202);}
-    25%  {color:rgb(202, 194, 169);}
-    50%  {color:rgb(80, 75, 63); font-size: 18px;}
-    75%  {color:rgb(184, 184, 152);}
-    100% {color:rgb(221, 215, 190);}
+    0%   {color:rgb(255, 255, 255);}
+    50% {color:rgb(0, 0, 0);}
+    100% {color:rgb(255, 255, 255);}
   }
