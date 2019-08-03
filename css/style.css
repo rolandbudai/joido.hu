@@ -26,3 +26,17 @@ p{
     border: 2px solid rgba(255, 255, 255, 0.5);
     padding: 15px;
 }
+
+.move{
+    animation-name: coloring;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes coloring {
+    0%   {color:rgb(245, 234, 202);}
+    25%  {color:rgb(202, 194, 169);}
+    50%  {color:rgb(80, 75, 63); font-size: 18px;}
+    75%  {color:rgb(184, 184, 152);}
+    100% {color:rgb(221, 215, 190);}
+  }
