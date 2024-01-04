@@ -1,2 +1,2 @@
 # whatstheweather
-small weather app with api
+Weather app with api
